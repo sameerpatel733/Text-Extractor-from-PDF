@@ -31,7 +31,6 @@
             btnBrowse = new Button();
             btnExtract = new Button();
             tbxOutput = new TextBox();
-            openFileDialog1 = new OpenFileDialog();
             tbxpath = new TextBox();
             SuspendLayout();
             // 
@@ -57,17 +56,14 @@
             // 
             // tbxOutput
             // 
+            tbxOutput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tbxOutput.Location = new Point(39, 83);
             tbxOutput.Multiline = true;
             tbxOutput.Name = "tbxOutput";
-            tbxOutput.ScrollBars = ScrollBars.Both;
+            tbxOutput.ScrollBars = ScrollBars.Vertical;
             tbxOutput.Size = new Size(715, 340);
             tbxOutput.TabIndex = 2;
             tbxOutput.Visible = false;
-            // 
-            // openFileDialog1
-            // 
-            openFileDialog1.FileName = "openFileDialog1";
             // 
             // tbxpath
             // 
@@ -96,7 +92,6 @@
         private Button btnBrowse;
         private Button btnExtract;
         private TextBox tbxOutput;
-        private OpenFileDialog openFileDialog1;
         private TextBox tbxpath;
     }
 }
